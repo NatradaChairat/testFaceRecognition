@@ -9,8 +9,12 @@ BASE_URL = 'https://southeastasia.api.cognitive.microsoft.com/face/v1.0/'  # Rep
 CF.BaseUrl.set(BASE_URL)
 
 # You can use this example JPG or replace the URL below with your own URL to a JPEG image.
-img_url = 'https://raw.githubusercontent.com/Microsoft/Cognitive-Face-Windows/master/Data/detection1.jpg'
+image1 = 'https://raw.githubusercontent.com/Microsoft/Cognitive-Face-Windows/master/Data/detection1.jpg'
+image2 = ''
+
+img_url = image1
 faces = CF.face.detect(img_url)
+
 
 print(faces)
 
