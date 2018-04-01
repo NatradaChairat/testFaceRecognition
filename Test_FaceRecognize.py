@@ -52,10 +52,11 @@ def getRectangle(faceDictionary):
     right = top+ rect['width']
     return ((left, top), (bottom, right))
 
-response = requests.get(img_url)
+
+response = requests.get(img_url3)
 img = Image.open(BytesIO(response.content))
 
 draw = ImageDraw.Draw(img)
-for face in faces: draw.rectangle(getRectangle(face), outline='red')
+for face in faces3: draw.rectangle(getRectangle(face), outline='red')
 
 img.show()
